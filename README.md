@@ -16,7 +16,7 @@ mvn install:install-file -Dfile=messagequeue-1.0-SNAPSHOT.jar  -DgroupId=com.tin
         </dependency>
 ```
 
-### Description of Implement
+### Description of Implementation
 1. Add local.properties file to configure the queueServiceType
 2. Create two producers and two consumers. Producers push data into queue. Consumers pull from queue and delete the data.
 3. Create a Thread pool with 4 threads. Execute each thread to implement multiple threads operate one queue.
